@@ -1,6 +1,9 @@
 import java.io.*;
 import java.util.Arrays;
 
+/**
+ * implement a service for comparing files for identity. files are identical if they are byte-by-byte equal.
+ */
 public class IfIdenticalService {
     public static void ifFilesAreIdentical(File f1, File f2) throws IOException {
         try (InputStream is1 = new FileInputStream(f1);
